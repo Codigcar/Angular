@@ -1,0 +1,21 @@
+<table border="2">
+    <caption>My Todo's</caption>
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>description</th>
+            <th>Done</th>
+            <th>Target Date</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor = "let obj of ListObj">
+            <td>{{obj.id}}</td>
+            <td>{{obj.description}}</td>
+            <td>{{obj.done}}</td>
+            <td>{{obj.targetDate | date | uppercase}}</td><!--Tuberias-->
+        </tr>
+    </tbody>
+
+</table>
